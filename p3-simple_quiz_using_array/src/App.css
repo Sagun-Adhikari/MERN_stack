@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+.quiz-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+h3 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+p {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e2e8f0;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.progress {
+    height: 100%;
+    background-color: #2563eb;
+    border-radius: 5px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.option-button {
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: white;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.option-button:hover:not(:disabled) {
+    background-color: #eff6ff;
+    border-color: #2563eb;
+}
+
+.option-button:disabled {
+    cursor: not-allowed;
+}
+
+.option-button.correct {
+    background-color: #dcfce7;
+    border-color: #16a34a;
+    color: #166534;
+}
+
+.option-button.incorrect {
+    background-color: #fee2e2;
+    border-color: #dc2626;
+    color: #991b1b;
+}
+
+.next-button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.next-button:hover:not(:disabled) {
+    background-color: #1d4ed8;
+}
+
+.next-button:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+}
+
+.quiz-container > button:not(.next-button) {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.quiz-container > button:not(.next-button):hover {
+    background-color: #1d4ed8;
+}
+
+@media (max-width: 500px) {
+    .quiz-container {
+        width: 94%;
+        margin: 25px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    .option-button {
+        font-size: 15px;
+    }
+}
