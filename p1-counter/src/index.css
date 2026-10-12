@@ -1,0 +1,15 @@
+@import "tailwindcss";
+button{
+  font-size: 40px;
+  border:solid 1px black;
+  border-radius: 10px;
+  margin: 30px;
+  width: 70px;
+}
+input{
+  border: solid 1px black;
+  height: 40px;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
