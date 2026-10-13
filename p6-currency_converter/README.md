@@ -1,6 +1,7 @@
 # Currency Converter
 
 A simple Currency Converter built using React that converts an amount from one currency to another using a public exchange rate API.
+this is simple curency code
 
 ## Features
 - Convert between different currencies
@@ -25,6 +26,7 @@ cd currency-converter
 npm install
 npm run dev
 ```
+
 
 ## How to Use
 1. Enter the amount.
