@@ -66,7 +66,7 @@ function App() {
                     );
                 })}
             </div>
-
+<div></div>
             {selectedImage && (
                 <ImagePopup
                     image={selectedImage}
