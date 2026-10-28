@@ -20,6 +20,7 @@ const App = () => {
   return (
     <BrowserRouter>
             <Routes>
+                //hehe
                 <Route path="/" element={<Navigate to="/signup" />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/login" element={<Login />} />
