@@ -32,6 +32,7 @@ const NoteForm = () => {
                 }}
                 required
             />
+            
         <textarea
             placeholder="Enter note content"
             value={content}
