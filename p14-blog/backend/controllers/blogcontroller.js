@@ -13,12 +13,14 @@ const createblog = async (req, res) => {
 }
 
 
-const readblog= async ()=>{
-    const blogs=await blog.find();
+const readblog = async (req, res) => {
+    const blogs = await blog.find();
+
     res.status(200).json({
-        message:"blog is read successfully"
-    })
-}
+        message: "blog is read successfully",
+        blogs: blogs
+    });
+};
 
 const updateblog= async (req,res)=>{
     const {title,content}= res.body;

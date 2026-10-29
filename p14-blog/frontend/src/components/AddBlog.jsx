@@ -13,8 +13,8 @@ const AddBlog = () => {
       content:content
     })
     alert("Note created successfully");
-    setTitle("");
-    setContent("");
+    settitle("");
+    setcontent("");
 
   }
   return (
