@@ -12,4 +12,45 @@ const createblog = async (req, res) => {
     })
 }
 
-module.exports = { createblog }
+
+const readblog= async ()=>{
+    const blogs=await blog.find();
+    res.status(200).json({
+        message:"blog is read successfully"
+    })
+}
+
+const updateblog= async (req,res)=>{
+    const {title,content}= res.body;
+    const blog=await blog.findByIdAndUpdate(
+        req.params.id, //k ko according/k ko basis maa
+        {title,content}, //k update garni
+        {new:true,runValidators: true }
+    );
+    if(!blog){
+        return res.status(404).json({
+        message: "blog not found"
+      });
+    }
+    res.status(200).json({
+      message: "Note updated successfully",
+      blog
+    });
+}
+
+
+//delete the blogs
+ const deleteblog= async (req,res)=>{
+    const blog = await blog.findByIdAndDelete(req.params.id);
+
+    if (!blog) {
+      return res.status(404).json({
+        message: "blog not found"
+      });
+    }
+    res.status(200).json({
+      message: "blog deleted successfully"
+    });
+ }
+
+module.exports = { createblog, readblog,updateblog,deleteblog}
