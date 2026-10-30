@@ -32,3 +32,149 @@ nav a {
 nav a:hover {
   color: orange;
 }
+
+
+
+.container {
+    padding: 30px 40px;
+}
+
+.container h2 {
+    margin-bottom: 25px;
+}
+
+.container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.container input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #222;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 13px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #222;
+    color: white;
+}
+
+td button {
+    margin-right: 8px;
+}
+
+
+
+.container {
+    padding: 30px 40px;
+}
+
+.container h2 {
+    margin-bottom: 25px;
+}
+
+.container h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.container input,
+.container select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 180px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #222;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 13px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #222;
+    color: white;
+}
+
+td button {
+    margin-right: 8px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 20px 12px;
+        overflow-x: auto;
+    }
+
+    nav {
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    table {
+        min-width: 650px;
+    }
+}
