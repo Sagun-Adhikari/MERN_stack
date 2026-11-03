@@ -27,6 +27,7 @@ async function registerUser(req,res){
         email,
         password:hashedpassword
     });
+    
 
     res.status(201).json({
         message: "Registration successful",
